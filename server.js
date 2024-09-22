@@ -57,5 +57,9 @@ app.use("/api/shop/review", shopReviewRouter);
 
 app.use("/api/common/feature", commonFeatureRouter);
 
+app.get("/", (req,res, next)=>{
+  res.redirect("https://moontrekcollections.co.ke")
+})
+
 // Start the server
 app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
